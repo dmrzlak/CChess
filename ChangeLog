@@ -1,0 +1,111 @@
+1/18/18-
+  Started project, began with printing a border. Will implement an array for the cells 
+  and more implentation for the cells soon. Added the implemetaion for a char[][] in order
+  display the map. Created the initDungeon method. Removed the initDungeon Method and implented 
+  Cell structures, and reimplimented the array to work with cells. Created a room structure to 
+  help with creating rooms. Created a placeRoom function, which manipulates the dungeon to add
+  a room to the cell array.Made the parameter for the build random roomms, build five first
+  and then attempt to fill until 7% filled.
+1/19/18-
+  Decided to change some of the parameters for the dungeon filling, I felt as if it may have
+  been leaving the dungeon a little empty for my taste. (Set the percent as about 13.5%).
+  Finished the remaining issues with placing rooms (Collision and parameters for building)
+  Added a spawnRooms method to do so
+1/20/18-
+  Finished the place halls portion of the program.
+
+
+Assignment 1.02-
+
+1/25- Began Project. Started with an implementation of the main function. Understand what to do with the args and what to do depending on each of those.
+
+1/26-Started to create a couple of methods, readByte (eventually became uneeded and soon after deleted) and a byteToChar. Realized the need to create a .h file for the dungeon generator given by Professor Schaeffer, and began to work on that. At first I did'nt understand how to do so, and it took me the day to understand what was needed in order to make the file.
+
+1/27-Created the readFile, def, and DungeonfromFile functions. I was having some issues with the rooms, but I soon found out that I had an extra statement that was causing some issues.
+
+1/28- Finished project. Wrote the createBufFromDungeon and writeFile methods, finished with some debugging in my program that was causing some issues in read and write along with the rooms issue from the day before.
+
+
+2/2- Started Project, using another Schaeffer's code and updated the h file from the previous assingment to work with the his newest implementation. Started and finished the no_tunnel pathfindng. Done by using Shcaeffer's code and adding extra movement capabilities, along with changing the cost of open tiles.
+
+
+2/4-Finished the tunnel_path function. Using the same method as the 
+	no_tunnel_path. Made the main function to select the middle of the first 	room.
+	
+
+
+2/15-Started project, using Schaffer's code to implement a lot of the main, 
+	until the new specs of the assignment. Added a 2D array of character_t 
+	into the program, later moved to be in dungeon_t. Created pc_t, npc_t, 
+	character_t. Moved the path functions over to this project, Created the 
+	cmp for the heap to work
+
+2/18- Created the next_turn and move functions, had a couple of bugs with them,
+	issues with the characters not moving. After observing the characters
+	positions before and after a move, I was able to see that they were 
+	moving.
+
+2/19- Put together a main() that would operate the game, eventually everything 
+	would work in there.
+
+2/20- finishing touches in rlg327.c, rlg327.h and this program. Finished project
+
+
+
+2/22- Started Assignment 1.05. Working with ncurses, began with the render dungeon function into a functionality using ncurses. Next attempted to change the move to allow the npc to move based on our instructions, had some debugging to do, but worked fairly well. Monster list and, staircases and other functionality to be added still.
+
+2/23- Fixed the move function to work a little bit better. Added stairs into the dungeon
+
+2/24- Added the stair implementation into the move function, worked on the mon_list, I was able to work with it pretty well, besides scrolling. I couldn't get the ncurses to read the arrow keys.
+
+From 2/25 to 2/28 With the extension,  I walked away from the programming to research the ncurses a little more to understand what was required for the ncurses constants
+
+3/1- Fixed the scrolling. I was able to read the keys now, and then was able to scroll properly. Finished project. 
+
+
+3/16- Started Project 1.06. Converted the code into c++ (changing file extensions, adding casts and turn NPC, PC, and Character into classes). Began working, and finished the teleport function. At first, I used the base of Schaeffer's teleport pc function to teleport, by adding the functionality needed. 
+
+3/17-Created the Dreaded Fog of War, and added the random teleport fuction into the code to reinstate Schaeffer's teleport_pc functionality back into the game.
+
+3/19-Debugging and Finished Project
+
+
+
+3/23- Started the Project. Began with the switch manipulation.
+
+3/24- Added Functionality to read a file, then implemented the file format
+
+3/27- Changed a few pieces of the project in light of the test file posted, 
+	an implementation to add the whole desc in even with new line 
+	characters, and the ability for multiple abils and colors. Finished 
+	Project
+
+3/29- Started project 1.08. Started by extending the npc fields to include an 
+	implementation of the monster_descriptions. Added io implementation for
+	the monsters and and their color. 
+
+3/30- Added implemetation of the items, same thing as the day before. 
+	Finished project
+
+4/6- Started project 1.09. Started by implementing arrays for the inventory and 
+	equipment for the PC. Updated combat, and the game's end state. With using the professors code, sometimes a boss will not spawn, so I implemented that if there isn't a boss, then the game runs as before. Then worked on equip.
+
+4/7- Added the functionality for the other command prompts for the other command
+	prompts except for Inspecting and item. Change the teleport to work with
+	prompt 'g'
+
+4/8- Added the final functionality to the project and finished
+
+
+
+4/13- Started on project. Started with piece class. Then created the board
+
+4/14- Implemented ncurses so that the board is pretty. Implemented the turn based system, so that a player can only mive their piece.
+
+4/16- Added the implementation of the pieces moving, first pawns, then rooks, knights
+
+4/17- Finished the implementation of the pieces, bishops, knights and queens, then fixed pawns
+
+4/19- Added messages, such as turn the move prompts etc.
+
+4/20- Added implementation to change a pawn into another piece when it reaches the other side of the board

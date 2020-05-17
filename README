@@ -1,0 +1,31 @@
+ This project is a two player chess game, to enact a move, press a key and then 
+      select the piece that you want to move and then the cell that you want to 
+      move it to. for selection after each cell prompt (piece and then the 
+      location to move) press the enter key. There is functionality for moving 
+      pieces, and if you do not select a valid move, you must try again. There 
+      is not any functionality for check, checkmate or castling. So if you 
+      commit to a move that would put you in check, you're screwed ;)
+
+
+Data Structure-
+     two classes
+     	piece- just holds a few items that a piece needs: type color and if 
+	 	it has moved before
+	Board-2D array holding the pieces, and the turn #
+
+Methods-
+	clear_io-completely clears the window
+	gen_board- creates a board and places the pieces
+	io_init- intializes the ncurses and window
+	io_reset-ends ncurses
+	io_display- show the board
+	move- moves the selected piece calls a function to move he piece
+	      move_pawn
+	      move_rook
+	      move_knight
+	      move_bishop
+	      move_queen
+	      move_king
+	io_move-handles io to move the piece, does the bulk of handling
+	io_handle_input- Handles the input- if the user presses Q, quit the game
+	
